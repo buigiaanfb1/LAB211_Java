@@ -23,7 +23,7 @@ public class UserAccountList extends ArrayList<UserAccount> {
 	Scanner sc = new Scanner(System.in);
 	ArrayList<User> userList = new ArrayList<>();
 	ArrayList<Log> logList = new ArrayList<>();
-//    String password = PasswordField.readPassword("Enter password: ");
+//    String password = pass.readPassword("Enter password: ");
 //    System.out.println("The password entered is: "+password);
 
 	/* Initialize FILE */
@@ -411,13 +411,13 @@ public class UserAccountList extends ArrayList<UserAccount> {
 
 	public void printLog() {
 		for (Log o : logList)
-			if (o.getAccountId().equalsIgnoreCase(accountId))
-				if (o.getCurrentMonth() == o.getLastMonth() + 1)
+			if (o.getAccountId().equalsIgnoreCase(accountId)) 
 					o.print();
 	}
 
 	public void printLogAdmin() {
-		for (Log o : logList)
+		for (Log o : logList) {
 			o.print();
+		}
 	}
 }

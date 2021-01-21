@@ -10,6 +10,8 @@ public class Log implements Serializable {
 	private Date date;
 	private String function;
 	private int month;
+//	Date d = new Date();
+	private Calendar cal;
 
 	public Log(String accountId) {
 		this.accountId = accountId;
@@ -17,21 +19,7 @@ public class Log implements Serializable {
 
 	public Log() {
 	}
-
-	public int getCurrentMonth() {
-		Calendar cal = Calendar.getInstance();
-		cal.setTime(date);
-		int current = cal.get(Calendar.MONTH) + 1;
-		return current == 12 ? 0 : current;
-	}
-
-	public int getLastMonth() {
-		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.DAY_OF_MONTH, -30);
-		int current = cal.get(Calendar.MONTH) + 1;
-		return current == 12 ? 0 : current;
-	}
-
+	
 	public Log(String accountId, String function) {
 		this.accountId = accountId;
 		this.date = new Date();
@@ -45,7 +33,7 @@ public class Log implements Serializable {
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
 	}
-
+	
 	public int getMonth() {
 		return month;
 	}

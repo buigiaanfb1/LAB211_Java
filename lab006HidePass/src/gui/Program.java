@@ -20,7 +20,7 @@ public class Program {
 				break;
 			}
 			userChoice();
-			System.out.print("Please enter your choice from 1 --> 8: ");
+			System.out.print("Please enter your choice from 1 --> 6: ");
 			try {
 				choose = Integer.parseInt(sc.nextLine());
 			} catch (Exception e) {
