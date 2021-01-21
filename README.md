@@ -4,7 +4,7 @@
 thì chỉ có nhập không hiện thui (theo như những gi mình lướt trên mạng)
 
 - lab00006HidePassword chưa có phần in ra log trong 1 tháng gần nhất ( chỉ in ra hết ) 
-nhưng lab00006 thì FULL COMBO huỷ diệt thế giới nha các bạn
+nhưng lab00006 thì FULL COMBO huỷ diệt thế giới (nhưng lại éo có hide password *****) nha các bạn như mình giải thich ở phái trên
 
 - hôm nay mình lấy 1300 loc nha các bạn 21/01/2021 
 
